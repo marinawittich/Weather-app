@@ -1,0 +1,140 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1480374178950-b2c449be122e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #261c27;
+    min-height: 100vh;
+}
+#container{
+    
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    /* flex-wrap: wrap; */
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(130, 133, 148, 0.4);
+    font-family: 'Lora', serif;
+}
+#main{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+h1{
+    font-size: 50px;
+    color: #231955;
+    font-weight: bold;
+}
+#header{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#input{
+    border: 2px solid #231955;
+    padding:15px;
+    font-size: 20px;
+    color: #231955;
+    width: 100%;
+    margin:40px
+}
+#when-where{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #231955;
+}
+#city{
+    font-size: 45px;
+    font-weight: bold;
+}
+#humidity{
+    font-size: 30px;
+    color: #231955;
+    font-weight: bold;
+   
+}
+#date{
+    font-size: 30px;
+}
+#now{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#temp{
+    font-size: 110px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 10px 15px black;
+    margin:0;
+}
+#feelsLile{
+    font-size: 30px;
+    color: #231955;
+    font-weight: bold;
+    
+}
+#sky{
+    font-size: 32px;
+    color: #231955;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+#variations{
+    font-size: 25px;
+    color: #231955;
+    font-weight: bold;
+    
+}
+@media all and (max-width:1600px){
+    #container{
+        width: 80%;  
+    }
+}
+@media all and (max-width:900px){
+    h1{
+        font-size: 40px; 
+    }
+}
+@media all and (max-width:500px){
+    #container{
+        width: 100%;
+        height: 100vh; 
+    }
+    h1{
+        font-size: 23px; 
+    }
+    #header{
+        margin-top: 0;
+    }
+    #input{
+        padding:10px;
+        font-size: 15px;
+    }
+   
+    #city{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #humidity{
+        font-size: 25px;
+    }
+    #date{
+        font-size: 25px;    
+    }
+   
+    #temp{
+        font-size: 80px;
+    }
+   
+    #feelsLile, #humidity, #sky, #variations{
+        font-size: 20px;
+        
+    }
+    
+}
